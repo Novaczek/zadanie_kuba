@@ -129,7 +129,7 @@ void InsertionSort(int n, int *tab)
 }
 
 int main() {
-    const int n = 10;
+    const int n = 12;
     int t[n];
     
     wypelnij_tablice(t, n);
