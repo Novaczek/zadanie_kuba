@@ -140,5 +140,4 @@ int main() {
     }
 
     return 0;
-} wytlumacz kod
-        
+} 
