@@ -97,46 +97,43 @@ int wyszukiwanie_interpolacyjne(int t[], int size, int k) {
 }
 
 int main() {
-    int t[] = {2, 3, 4, 5, 8, 9, 10, 11, 13, 23, 43, 78};
-    int p;
-
-    cout << "Podaj liczbę: " << endl;
-    cin >> p;
+    int tt[12] = {2,3,1,5,11,15,6,8,4,23,10,7};
     int result;
-
-    result = wyszukiwanie_liniowe(t, 12, p);
+    int k_exist_in_tt = 5;
+    int k_not_exist_in_tt = 13;
+    result = wyszukiwanie_liniowe(tt, 12, k_exist_in_tt);
     if (result >= 0) {
-        cout << "Liczba " << p << " została znaleziona pod indeksem: " << result << endl;
+        cout << "Liczba " << k_exist_in_tt << " została znaleziona pod indeksem: " << result << endl;
     } else {
-        cout << "Liczba " << p << " nie została odnaleziona" << endl;
+        cout << "Liczba " << k_exist_in_tt << " nie została odnaleziona" << endl;
     }
 
-    result = wyszukiwanie_liniowe_z_wart(t, 12, p);
+    result = wyszukiwanie_liniowe_z_wart(tt, 12, k_exist_in_tt);
     if (result >= 0) {
-        cout << "Liczba " << p << " została znaleziona pod indeksem: " << result << endl;
+        cout << "Liczba " << k_exist_in_tt << " została znaleziona pod indeksem: " << result << endl;
     } else {
-        cout << "Liczba " << p << " nie została odnaleziona" << endl;
+        cout << "Liczba " << k_exist_in_tt << " nie została odnaleziona" << endl;
     }
 
-    result = wyszukiwanie_binarne(t, 12, p);
+    result = wyszukiwanie_binarne(tt, 12, k_exist_in_tt);
     if (result >= 0) {
-        cout << "Liczba " << p << " została znaleziona pod indeksem: " << result << endl;
+        cout << "Liczba " << k_exist_in_tt << " została znaleziona pod indeksem: " << result << endl;
     } else {
-        cout << "Liczba " << p << " nie została odnaleziona" << endl;
+        cout << "Liczba " << k_exist_in_tt << " nie została odnaleziona" << endl;
     }
 
-    result = wyszukiwanie_skokowe(t, 12, p);
+    result = wyszukiwanie_skokowe(tt, 12, k_exist_in_tt);
     if (result >= 0) {
-        cout << "Liczba " << p << " została znaleziona pod indeksem: " << result << endl;
+        cout << "Liczba " << k_exist_in_tt << " została znaleziona pod indeksem: " << result << endl;
     } else {
-        cout << "Liczba " << p << " nie została odnaleziona" << endl;
+        cout << "Liczba " << k_exist_in_tt << " nie została odnaleziona" << endl;
     }
 
-    result = wyszukiwanie_interpolacyjne(t, 12, p);
+    result = wyszukiwanie_interpolacyjne(tt, 12, k_exist_in_tt);
     if (result >= 0) {
-        cout << "Liczba " << p << " została znaleziona pod indeksem: " << result << endl;
+        cout << "Liczba " << k_exist_in_tt << " została znaleziona pod indeksem: " << result << endl;
     } else {
-        cout << "Liczba " << p << " nie została odnaleziona" << endl;
+        cout << "Liczba " << k_exist_in_tt << " nie została odnaleziona" << endl;
     }
 
     return 0;
